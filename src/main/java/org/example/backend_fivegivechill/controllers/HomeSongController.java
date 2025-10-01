@@ -206,9 +206,9 @@ public class HomeSongController {
             String origin = headers.getFirst("Origin");
 
             boolean validReferer = referer != null &&
-                    (referer.contains("http://localhost:3000/") || referer.contains("http://192.168.1.21:3000/"));
+                    (referer.contains("http://localhost:3000/") || referer.contains("http://103.101.163.203/:3000/"));
             boolean validOrigin = origin != null &&
-                    (origin.contains("http://localhost:3000/") || origin.contains("http://192.168.1.21:3000/"));
+                    (origin.contains("http://localhost:3000/") || origin.contains("http://103.101.163.203/:3000/"));
 
             if (!validReferer && !validOrigin) {
                 System.out.println("Lỗi nè");

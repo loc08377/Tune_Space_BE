@@ -371,7 +371,7 @@ public class SongService {
 
         String signature = encryption.sign(dataToSign, encryptionKey);
 
-        String signedUrl = String.format("http://192.168.1.21:8080/stream?songId=%s&userId=%s&expires=%d&signature=%s", songId, userId, expires, signature);
+        String signedUrl = String.format("http://103.101.163.203/:8080/stream?songId=%s&userId=%s&expires=%d&signature=%s", songId, userId, expires, signature);
 
         return signedUrl;
     }
